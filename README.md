@@ -1,2 +1,2 @@
 # nataljs.github.io
-NatalJS Website
+[NatalJS Website](http://nataljs.github.io)
