@@ -5,5 +5,14 @@
     font-size: .75em;
     color: $black;
     font-weight: $font-weight-black;
+    padding: 0px 15px;
+    list-style: none;
+    &__link {
+      text-decoration: none;
+      color: $black;
+      &:hover {
+        color: $pink;
+      }
+    }
   }
 }
