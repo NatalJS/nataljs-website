@@ -1,0 +1,19 @@
+@mixin square($color, $size, $angle) {
+  transform: rotate($angle);
+  transform-origin: center center;
+  background-color: $color;
+  width: $size + px;
+  height: $size + px;
+}
+
+@mixin circle($color, $size, $angle) {
+  background-color: $color;
+  width: $size;
+  height: $size;
+}
+
+@mixin strip($color, $width, $height, $angle) {
+  @include square($color, 0, $angle);
+  width: $width;
+  height: $height;
+}

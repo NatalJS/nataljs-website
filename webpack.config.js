@@ -21,6 +21,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        loader: 'html-loader',
+        options: {
+          interpolate: true
+        }
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader'
       },
