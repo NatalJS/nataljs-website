@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 2px;
+  padding: 13px 28px;
+  background-color: $pink;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  display: inline-block;
+  text-transform: uppercase;
+  &:hover {
+    background-color: darken($pink, 10%);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media(min-width: map-get($grid-breakpoints, sm)) {
+  .btn {
+    font-size: .8em;
+  }
+}
