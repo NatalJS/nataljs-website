@@ -4,13 +4,13 @@ menu {
 
 .menu {
   padding: 0px;
-  display: flex;
-  align-items: center;
+  @extend .d-flex;
+  @extend .align-items-center;
   &__item {
     font-size: .75em;
     color: $black;
     font-weight: $font-weight-black;
-    padding: 0px 15px;
+    padding: 0px 5px;
     list-style: none;
     &__link {
       text-decoration: none;
@@ -19,6 +19,14 @@ menu {
         text-decoration: none;
         color: $pink;
       }
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, sm)) {
+  .menu {
+    &__item {
+      padding: 0px 15px;
     }
   }
 }
