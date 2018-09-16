@@ -2,12 +2,13 @@
   transform: rotate($angle);
   transform-origin: center center;
   background-color: $color;
-  width: $size + px;
-  height: $size + px;
+  width: $size;
+  height: $size;
 }
 
-@mixin circle($color, $size, $angle) {
+@mixin circle($color, $size) {
   background-color: $color;
+  border-radius: 50%;
   width: $size;
   height: $size;
 }

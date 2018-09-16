@@ -1,0 +1,19 @@
+.title-decorator {
+  display: inline-block;
+  &--circle {
+    @extend .title-decorator;
+    @include circle($green, 22px);
+  }
+  &--square {
+    @extend .title-decorator;
+    @include square($pink, 22px, 343deg);
+  }
+}
+
+.decorative-square {
+  @include square($green, 55px, 60deg);
+}
+
+.decorative-circle {
+  @include circle($pink, 65px);
+}

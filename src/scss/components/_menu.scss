@@ -1,0 +1,9 @@
+.menu {
+  display: flex;
+  align-items: center;
+  &__item {
+    font-size: .75em;
+    color: $black;
+    font-weight: $font-weight-black;
+  }
+}
