@@ -1,0 +1,54 @@
+{
+  "name": "nataljs.github.io",
+  "version": "1.0.0",
+  "description": "Natal JS user group website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot",
+    "production": "rm -rf dist && webpack --progress --config webpack.production.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatalJS/nataljs.github.io.git"
+  },
+  "keywords": [
+    "natal-rn",
+    "javascript",
+    "frontend",
+    "nataljs"
+  ],
+  "author": "NatalJS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatalJS/nataljs.github.io/issues"
+  },
+  "homepage": "https://github.com/NatalJS/nataljs.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "scroll-navigation-menu": "^0.1.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.2",
+    "postcss": "^7.0.2",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  }
+}

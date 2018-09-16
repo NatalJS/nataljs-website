@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+        "scss/*": ["src/scss/*"],
+        "img/*": ["src/img/*"],
+        "app/*": ["src/js/*"],
+        "config": ["src/config.js"],
+        "app-metadata": ["package.json"],
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
