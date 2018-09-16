@@ -1,22 +1,27 @@
-menu {
+menu, ul {
   padding: 0px;
+  margin: 0px;
 }
 
 .menu {
-  padding: 0px;
   @extend .d-flex;
   @extend .align-items-center;
   &__item {
-    font-size: .75em;
+    font-size: .5em;
     color: $black;
     font-weight: $font-weight-black;
-    padding: 0px 5px;
+    padding: 3px 5px;
     list-style: none;
     &__link {
+      white-space: nowrap;
       text-decoration: none;
       color: $black;
+      text-transform: uppercase;
       &:hover {
         text-decoration: none;
+        color: $pink;
+      }
+      &.active {
         color: $pink;
       }
     }
@@ -27,6 +32,7 @@ menu {
   .menu {
     &__item {
       padding: 0px 15px;
+      font-size: .75em;
     }
   }
 }
