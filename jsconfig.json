@@ -5,10 +5,8 @@
     "baseUrl": "./",
     "paths": {
         "scss/*": ["src/scss/*"],
-        "img/*": ["src/img/*"],
-        "app/*": ["src/js/*"],
-        "config": ["src/config.js"],
-        "app-metadata": ["package.json"],
+        "assets/*": ["src/assets/*"],
+        "app/*": ["src/js/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
