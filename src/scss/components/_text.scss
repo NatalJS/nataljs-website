@@ -1,10 +1,15 @@
-.section-title {
+%title {
   font-family: Roboto Condensed, sans-serif;
-  font-size: 1.75em;
   font-style: italic;
   font-weight: $font-weight-regular;
   text-transform: uppercase;
+}
+
+.section-title {
+  @extend %title;
+  font-size: 1.75em;
   color: $black;
+  margin-bottom: 1.68px;
   &:before {
     content: '';
     margin-right: 25px;
@@ -14,5 +19,30 @@
     content: '';
     margin-left: 25px;
     @extend .title-decorator--square;
+  }
+}
+
+.section-title--alternate {
+  @extend %title;
+  font-size: 1.25em;
+}
+
+.article {
+  &__title {
+    font-size: 1.875em;
+    font-weight: $font-weight-black;
+  }
+  &__body {
+    font-size: 1.4em;
+    line-height: 1.8em;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, sm)) {
+  .article {
+    &__body {
+      font-size: 1em;
+      line-height: 2em;
+    }
   }
 }

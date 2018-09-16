@@ -7,7 +7,7 @@ menu, ul {
   @extend .d-flex;
   @extend .align-items-center;
   &__item {
-    font-size: .5em;
+    font-size: .75em;
     color: $black;
     font-weight: $font-weight-black;
     padding: 3px 5px;
@@ -32,7 +32,6 @@ menu, ul {
   .menu {
     &__item {
       padding: 0px 15px;
-      font-size: .75em;
     }
   }
 }

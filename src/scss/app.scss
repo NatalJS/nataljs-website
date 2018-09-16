@@ -6,10 +6,28 @@
 @import 'mixins';
 @import 'components';
 @import 'header';
+@import 'about';
 
 
 body {
   font-family: Roboto, sans-serif;
   font-weight: $font-weight-regular;
-  font-size: 16px;
+  font-size: 10px;
+}
+
+.logo {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: map-get($grid-breakpoints, sm)) {
+  .logo {
+    max-width: 300px;
+  }
+
+  body {
+    font-size: 16px;
+  }
 }
