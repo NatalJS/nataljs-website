@@ -2,6 +2,10 @@
 @import 'mixins';
 @import 'components';
 
+@import 'bootstrap/scss/bootstrap-grid.scss';
+@import 'bootstrap/scss/bootstrap-reboot.scss';
+@import 'bootstrap/scss/utilities';
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: $font-weight-regular;

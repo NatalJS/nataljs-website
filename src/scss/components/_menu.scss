@@ -1,4 +1,9 @@
+menu {
+  padding: 0px;
+}
+
 .menu {
+  padding: 0px;
   display: flex;
   align-items: center;
   &__item {
@@ -11,6 +16,7 @@
       text-decoration: none;
       color: $black;
       &:hover {
+        text-decoration: none;
         color: $pink;
       }
     }
