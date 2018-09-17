@@ -9,7 +9,9 @@
   @extend %title;
   font-size: 1.75em;
   color: $black;
-  margin-bottom: 1.68px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
   &:before {
     content: '';
     margin-right: 25px;

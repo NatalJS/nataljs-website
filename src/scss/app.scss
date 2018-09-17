@@ -23,6 +23,14 @@ body {
   height: auto;
 }
 
+.section {
+  position: relative;
+  padding-top: 50px;
+  @extend .row;
+  @extend .d-flex;
+  @extend .justify-content-sm-center;
+}
+
 @media (min-width: map-get($grid-breakpoints, sm)) {
   .logo {
     max-width: 300px;
@@ -30,5 +38,9 @@ body {
 
   body {
     font-size: 16px;
+  }
+
+  .section {
+    padding-top: 100px;
   }
 }
