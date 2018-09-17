@@ -13,7 +13,6 @@
 .decorative-strip {
   &--yellow {
     @include strip($yellow, 8px, 60px, -30deg);
-    z-index: -1;
   }
 }
 
@@ -22,13 +21,23 @@
   position: absolute;
   left: -15px;
   top: -20px;
-  z-index: -1;
 }
 
 .decorative-circle {
   @include circle($pink, 65px);
-  z-index: -1;
   top: 100px;
   right: -30px;
   position: absolute;
+}
+
+.decorative-wave {
+  &--yellow {
+    @include wave(yellow, 280px);
+  }
+  &--white {
+    @include wave(white, 280px);
+  }
+  &--pink {
+    @include wave(pink, 280px);
+  }
 }
