@@ -1,0 +1,22 @@
+.how-to {
+  &:before {
+    content: '';
+    @extend .decorative-wave--pink;
+    position: absolute;
+    z-index: -1;
+    transform: scale(.3);
+    left: -30%;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  .how-to {
+    &:before {
+      transform: none;
+      left: -20%;
+      top: 40%;
+      bottom: initial;
+    }
+  }
+}

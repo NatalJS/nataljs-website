@@ -7,10 +7,22 @@
   font-size: 1.2em;
   display: inline-block;
   text-transform: uppercase;
+  transition: color 200ms ease-in, background-color 200ms ease-in, border-color 200ms ease-in;
   &:hover {
-    background-color: darken($pink, 10%);
+    background-color: darken($pink, 15%);
     color: white;
     text-decoration: none;
+  }
+  &--negative {
+    @extend .btn;
+    color: $pink;
+    border: solid 1px $pink;
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+      color: darken($pink, 10%);
+      border-color: darken($pink, 15%);
+    }
   }
 }
 

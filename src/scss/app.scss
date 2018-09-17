@@ -7,6 +7,8 @@
 @import 'components';
 @import 'header';
 @import 'about';
+@import 'how-to';
+@import 'events';
 
 
 body {
@@ -41,6 +43,7 @@ body {
   }
 
   .section {
-    padding-top: 100px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
