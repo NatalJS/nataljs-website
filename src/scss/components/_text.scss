@@ -25,6 +25,16 @@
 .section-title--alternate {
   @extend %title;
   font-size: 1.25em;
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    bottom: 20px;
+    @extend .decorative-strip--yellow;
+  }
 }
 
 .article {
@@ -44,5 +54,11 @@
       font-size: 1em;
       line-height: 2em;
     }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+  .section-title--alternate {
+    width: auto;
   }
 }
