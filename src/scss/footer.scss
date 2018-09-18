@@ -6,6 +6,7 @@
     @extend .d-flex;
     @extend .justify-content-center;
     @extend .py-3;
+    @extend .nav;
   }
   
   &__social {
@@ -27,6 +28,7 @@
   
   &__copy {
     @extend .py-2;
+    @extend .m-0;
     @extend .text-center;
     font-size: 1.200em;
     
