@@ -6,7 +6,7 @@ module.exports = {
   entry: ['./src/scss/app.scss', './src/js/app.js'],
   output: {
     filename: 'app.[hash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
     publicPath: '/'
   },
   resolve: {

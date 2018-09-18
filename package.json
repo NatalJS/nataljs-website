@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline -o --host 0.0.0.0",
-    "production": "rm -rf dist && webpack --progress --config webpack.production.config.js"
+    "production": "webpack --progress --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
