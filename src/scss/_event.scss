@@ -1,0 +1,61 @@
+.event {
+  &__media {
+    @extend .my-4;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      z-index: 50;
+    }
+    
+    &--sticker1:before {
+      background-color: $green;
+      width: 100px;
+      height: 6px;
+      transform: rotate(-44deg) translate(-31%, -22px);
+    }
+
+     &--sticker2:before {
+      background-color: $pink;
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg) translate(79px, 0px);
+    }
+
+    &--sticker3:before {
+      background-color: $white;
+      width: 58px;
+      height: 6px;
+      transform: translate(-17px, 17px);
+    }
+  }
+
+  &__image {
+    @extend .mr-4;
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50%;
+  }
+  
+  &__talk {
+    @extend .mt-0;
+    font-size: 2.000em;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.250em;
+    }
+  }
+  
+  &__speaker {
+    font-size: 1.600em;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.000em;
+    }
+
+    span {
+      @extend .ml-1;
+      font-style: italic;
+    }
+  }
+}
