@@ -4,7 +4,7 @@
   "description": "Natal JS user group website",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --host 0.0.0.0",
+    "dev": "webpack-dev-server --inline -o --host 0.0.0.0",
     "production": "rm -rf dist && webpack --progress --config webpack.production.config.js"
   },
   "repository": {
