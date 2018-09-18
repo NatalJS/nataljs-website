@@ -4,8 +4,8 @@
   "description": "Natal JS user group website",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline -o --host 0.0.0.0",
-    "production": "webpack --progress --config webpack.production.config.js"
+    "dev": "webpack-dev-server --inline --open --host 0.0.0.0",
+    "production": "cd public && git ls-files -z | xargs -0 git rm -f && cd .. && webpack --progress --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   "homepage": "https://github.com/NatalJS/nataljs.github.io#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "scroll-navigation-menu": "^0.1.7"
+    "scroll-navigation-menu": "git+https://github.com/jhonnymichel/scroll-navigation-menu"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",

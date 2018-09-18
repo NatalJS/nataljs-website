@@ -1,5 +1,11 @@
 .header {
   @extend .d-flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: $white;
+  z-index: 999;
   @extend .align-items-center;
   justify-content: center;
   flex-direction: column;
