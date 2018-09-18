@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --open --host 0.0.0.0",
-    "production": "cd public && git ls-files -z | xargs -0 git rm -f && cd .. && webpack --progress --config webpack.production.config.js"
+    "production": "cd public && git ls-files -z | xargs -0 git rm -f && cd .. && webpack --progress --config webpack.production.config.js && cd public && git add . && git commit -m 'updating website' && git push origin master && cd .."
   },
   "repository": {
     "type": "git",
