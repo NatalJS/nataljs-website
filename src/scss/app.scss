@@ -1,6 +1,7 @@
 @import 'bootstrap/scss/bootstrap-grid';
 @import 'bootstrap/scss/bootstrap-reboot';
 @import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/media';
 
 @import 'variables';
 @import 'mixins';
@@ -9,6 +10,7 @@
 @import 'about';
 @import 'how-to';
 @import 'events';
+@import 'event';
 
 
 body {
