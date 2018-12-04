@@ -31,8 +31,21 @@ export default class App extends React.PureComponent {
         context.fillText('Natal/RN, 22 de setembro de 2018'.toUpperCase(), 460, 990);
         context.font = 'normal 21px roboto';
         context.fillText('Validação: https://nataljs.github.io/', 877, 1180);
+        window.setTimeout(() => {
+          if (window.confirm('Deseja fazer download?')) {
+            const attachment = this.canvas.current.toDataURL('image/png').replace('image/png', 'image/octet-stream');
+            const anchor = document.createElement('a');
+            anchor.setAttribute('download', `Natal JS - ${email} Certificado.png`);
+            anchor.setAttribute('href', attachment);
+            anchor.click();
+          }
+        }, 1000);
       };
     });
+  }
+
+  downloadGeneratedCertificate() {
+    window.alert();
   }
 
   render() {
@@ -41,8 +54,18 @@ export default class App extends React.PureComponent {
         <header>
         </header>
         <div className='certificating-container'>
-          <CertificateForm inputId="certificate-email" generateCertificate={this.generateCertificate.bind(this)}/>
-          {this.state.isCertificateVisible ? <canvas ref={this.canvas} className="certificate-canvas"  width="1754" height="1241"/> : null }
+          {this.state.isCertificateVisible
+              ?
+              <React.Fragment>
+                <canvas ref={this.canvas} className="certificate-canvas"  width="1754" height="1241"/>
+                <button type="button" onClick={this.downloadGeneratedCertificate.bind(this)}>Baixar</button>
+                <button type="button" onClick={() => this.setState({ isCertificateVisible: false })}>Voltar</button>
+              </React.Fragment>
+              :
+              <React.Fragment>
+                <CertificateForm inputId="certificate-email" generateCertificate={this.generateCertificate.bind(this)}/>
+              </React.Fragment>
+          }
         </div>
       </div>
     );
@@ -54,7 +77,7 @@ const CertificateForm = ({ inputId, generateCertificate }) => (
     <h2>Gere seu certificado do último evento!</h2>
     <label htmlFor={inputId}>E-mail</label>
     <input type="email" id={inputId} name="email" required/>
-    <button type="submit">Baixar</button>
+    <button type="submit">Gerar</button>
   </form>
 );
 
