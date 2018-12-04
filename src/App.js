@@ -1,28 +1,36 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
+export default class App extends React.PureComponent {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div>
+        <header>
         </header>
+        <div>
+          <CertificateForm inputId="certificate-email" onSubmit={onSubmitCertificateForm}/>
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+const CertificateForm = ({ inputId, onSubmit }) => (
+  <form onSubmit={onSubmit}>
+    <h2>Gere seu certificado do último evento!</h2>
+    <label htmlFor={inputId}>E-mail</label>
+    <input type="email" id={inputId} name="email" required/>
+    <button type="submit">Baixar</button>
+  </form>
+);
+
+const onSubmitCertificateForm = (event) => {
+  event.preventDefault();
+  const field = event.target['certificate-email'];
+  downloadCertificate(field.value);
+  field.value = '';
+};
+
+const downloadCertificate = (email) => {
+  alert(email);
+};
