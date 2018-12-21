@@ -1,0 +1,12 @@
+.certificating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  flex-grow: 1;
+}
+
+.certificate-canvas {
+  border: 1px solid black;
+  width: 800px;
+}
