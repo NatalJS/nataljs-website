@@ -1,5 +1,6 @@
 import React from 'react';
 import CertificateForm from './components/CertificateForm/CertificateForm';
+import MainHeader from './components/MainHeader/MainHeader';
 
 import './App.css';
 
@@ -7,9 +8,8 @@ export default class App extends React.PureComponent {
   render() {
     return (
       <div className="app">
-        <header>
-        </header>
-        <CertificateForm/>
+        <MainHeader/>
+        {null && <CertificateForm/>}
       </div>
     );
   }
