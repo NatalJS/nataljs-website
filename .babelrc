@@ -11,7 +11,11 @@
         ],
         "alias": {
           "components": "./components",
-          "styles": "./styles"
+          "pages": "./pages",
+          "styles": "./styles",
+          "store": "./store",
+          "tests": "./tests",
+          "utils": "./utils",
         }
       }
     ]
