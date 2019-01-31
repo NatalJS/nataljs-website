@@ -6,7 +6,7 @@ describe('Component JoinToUs', () => {
 
   beforeAll(() => {
     Component = setup(JoinToUs);
-  })
+  });
 
   it('should render component correctly', () => {
     const wrapper = renderer.create(Component());

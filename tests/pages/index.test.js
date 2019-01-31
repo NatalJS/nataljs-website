@@ -6,7 +6,7 @@ describe('Page Index', () => {
 
   beforeAll(() => {
     Component = setup(Index);
-  })
+  });
 
   it('should render all page with all components correctly', () => {
     const wrapper = renderer.create(Component());

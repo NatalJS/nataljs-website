@@ -7,7 +7,7 @@ import Events from 'components/Events';
 import JoinToUs from 'components/JoinToUs';
 import Footer from 'components/Footer';
 
-import 'styles/style.scss'
+import 'styles/style.scss';
 
 const Index = () => (
   <Fragment>

@@ -10,7 +10,7 @@ const JoinToUs = () => (
       <li className="join-us__item">
         Contribua em
         {' '}
-        <a className="join-us__link" href="https://github.com/NatalJS" title="NatalJS" target="_blank">
+        <a className="join-us__link" href="https://github.com/NatalJS" title="NatalJS" target="_blank" rel="noopener noreferrer">
           nossos projetos
         </a>
       </li>

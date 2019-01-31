@@ -398,6 +398,7 @@ Array [
         <a
           className="join-us__link"
           href="https://github.com/NatalJS"
+          rel="noopener noreferrer"
           target="_blank"
           title="NatalJS"
         >

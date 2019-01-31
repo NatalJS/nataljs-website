@@ -6,7 +6,7 @@ describe('Component Header', () => {
 
   beforeAll(() => {
     Component = setup(Header);
-  })
+  });
 
   it('should render component correctly', () => {
     const wrapper = renderer.create(Component());

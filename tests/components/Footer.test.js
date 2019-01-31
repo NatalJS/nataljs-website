@@ -7,7 +7,7 @@ describe('Component Footer', () => {
 
   beforeAll(() => {
     Component = setup(Footer);
-  })
+  });
 
   it('should render component correctly', () => {
     const wrapper = renderer.create(Component());
