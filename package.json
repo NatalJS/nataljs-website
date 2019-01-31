@@ -7,6 +7,7 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
+    "test": "jest --coverage",
     "start": "NODE_ENV=production && npm run build && npm run export && http-server ./out -o",
     "production": "cd public && git ls-files -z | xargs -0 git rm -f && cd .. && webpack --progress --config webpack.production.config.js && cd public && git add . && git commit -m 'updating website' && git push origin master && cd .."
   },
