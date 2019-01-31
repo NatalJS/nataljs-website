@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Header should render component correctly 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="header__logo"
+  >
+    <img
+      alt="NatalJS Logo"
+      className="logo--mobile"
+      src="/static/images/logo-mobile.svg"
+    />
+    <img
+      alt="NatalJS Logo"
+      className="logo--desktop"
+      src="/static/images/logo.svg"
+    />
+  </div>
+  <menu
+    className="header__menu"
+  >
+    <ul
+      className="menu"
+    >
+      <li
+        className="menu__item"
+      >
+        <a
+          className="menu__item__link scroll"
+          href="#about"
+        >
+          O que é
+        </a>
+      </li>
+      <li
+        className="menu__item"
+      >
+        <a
+          className="menu__item__link scroll"
+          href="#how-to"
+        >
+          Por onde começar?
+        </a>
+      </li>
+      <li
+        className="menu__item"
+      >
+        <a
+          className="menu__item__link scroll"
+          href="#incoming-events"
+        >
+          Próximos eventos
+        </a>
+      </li>
+      <li
+        className="menu__item"
+      >
+        <a
+          className="menu__item__link scroll"
+          href="#join-us"
+        >
+          Faça parte
+        </a>
+      </li>
+    </ul>
+  </menu>
+</header>
+`;

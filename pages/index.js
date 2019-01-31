@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Header from 'components/Header';
 import About from 'components/About';
@@ -10,7 +10,7 @@ import Footer from 'components/Footer';
 import 'styles/style.scss'
 
 const Index = () => (
-  <div>
+  <Fragment>
     <Head>
       <title>Natal.js - Comunidade para discutir javascript</title>
     </Head>
@@ -22,7 +22,7 @@ const Index = () => (
     <Events />
     <JoinToUs />
     <Footer />
-  </div>
+  </Fragment>
 );
 
 export default Index;

@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component JoinToUs should render component correctly 1`] = `
+<section
+  className="join-us"
+  id="join-us"
+>
+  <h1
+    className="section-title"
+  >
+    Faça Parte
+  </h1>
+  <ul
+    className="join-us__list"
+  >
+    <li
+      className="join-us__item"
+    >
+      Vá aos encontros!
+    </li>
+    <li
+      className="join-us__item"
+    >
+      Use a hasttag #nataljs
+    </li>
+    <li
+      className="join-us__item"
+    >
+      Divulgue nas redes socias
+    </li>
+    <li
+      className="join-us__item"
+    >
+      Contribua em
+       
+      <a
+        className="join-us__link"
+        href="https://github.com/NatalJS"
+        target="_blank"
+        title="NatalJS"
+      >
+        nossos projetos
+      </a>
+    </li>
+  </ul>
+</section>
+`;
