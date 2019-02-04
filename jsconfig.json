@@ -4,10 +4,13 @@
     "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
-        "scss/*": ["src/scss/*"],
-        "assets/*": ["src/assets/*"],
-        "app/*": ["src/js/*"]
+      "components/*": ["components/*"],
+      "pages/*": ["pages/*"],
+      "plugins/*": ["plugins/*"],
+      "store/*": ["store/*"],
+      "tests/*": ["tests/*"],
+      "utils/*": ["utils/*"],
     }
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist", "put", "public"]
 }

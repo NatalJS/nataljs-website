@@ -1,18 +1,25 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": [
-          ">0.25%",
-          "not ie 11",
-          "not op_mini all"
-        ]
-      },
-      "modules": false
-    }]
+    "next/babel"
   ],
   "plugins": [
-    ["transform-object-rest-spread", {"useBuiltIns": true}],
-    "transform-class-properties"
+    "babel-plugin-dynamic-import-node",
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "components": "./components",
+          "pages": "./pages",
+          "plugins": "./plugins",
+          "styles": "./styles",
+          "store": "./store",
+          "tests": "./tests",
+          "utils": "./utils",
+        }
+      }
+    ]
   ]
 }

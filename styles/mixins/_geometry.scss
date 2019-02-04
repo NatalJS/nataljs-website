@@ -27,5 +27,5 @@
   background-repeat: no-repeat;
   width: $width;
   height: $width / 4.5;
-  background-image: url(../assets/waves-#{$color}.svg);
+  background-image: url(/static/images/waves-#{$color}.svg);
 }

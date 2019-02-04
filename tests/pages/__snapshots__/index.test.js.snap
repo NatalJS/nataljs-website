@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Index should render all page with all components correctly 1`] = `
+Array [
+  <Header />,
+  <div
+    className="container"
+  >
+    <About />
+    <HowTo />
+  </div>,
+  <Events />,
+  <JoinToUs />,
+  <Footer />,
+]
+`;

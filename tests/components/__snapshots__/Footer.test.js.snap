@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Footer should render component correctly 1`] = `
+<footer
+  className="footer"
+  id="footer"
+>
+  <ul
+    className="footer__socials"
+  >
+    <li>
+      <a
+        className="footer__social"
+        href="https://www.facebook.com/nataljs/"
+        title="facebook"
+      >
+        <img
+          alt="facebook"
+          className="footer__ico"
+          src="/static/images/facebook-logo.svg"
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        className="footer__social"
+        href="https://github.com/NatalJS"
+        title="github"
+      >
+        <img
+          alt="github"
+          className="footer__ico"
+          src="/static/images/github-logo.svg"
+        />
+      </a>
+    </li>
+  </ul>
+  <p
+    className="footer__copy"
+  >
+    © NatalJS.
+  </p>
+</footer>
+`;
