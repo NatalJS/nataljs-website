@@ -3,6 +3,7 @@
     "next/babel"
   ],
   "plugins": [
+    "babel-plugin-dynamic-import-node",
     [
       "module-resolver",
       {
@@ -12,6 +13,7 @@
         "alias": {
           "components": "./components",
           "pages": "./pages",
+          "plugins": "./plugins",
           "styles": "./styles",
           "store": "./store",
           "tests": "./tests",

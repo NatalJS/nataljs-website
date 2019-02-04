@@ -9,20 +9,28 @@ import Footer from 'components/Footer';
 
 import 'styles/style.scss';
 
-const Index = () => (
-  <Fragment>
-    <Head>
-      <title>Natal.js - Comunidade para discutir javascript</title>
-    </Head>
-    <Header />
-    <div className="container">
-      <About />
-      <HowTo />
-    </div>
-    <Events />
-    <JoinToUs />
-    <Footer />
-  </Fragment>
-);
+class Index extends React.Component {
+  componentDidMount() {
+    import('plugins/scholl-navigation');
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <Head>
+          <title>Natal.js - Comunidade para discutir javascript</title>
+        </Head>
+        <Header />
+        <div className="container">
+          <About />
+          <HowTo />
+        </div>
+        <Events />
+        <JoinToUs />
+        <Footer />
+      </Fragment>
+    );
+  }
+}
 
 export default Index;

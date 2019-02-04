@@ -1,6 +1,13 @@
 import renderer from 'react-test-renderer';
 import Index from 'pages/index';
 
+jest.mock('components/Header', () => 'Header');
+jest.mock('components/About', () => 'About');
+jest.mock('components/HowTo', () => 'HowTo');
+jest.mock('components/Events', () => 'Events');
+jest.mock('components/JoinToUs', () => 'JoinToUs');
+jest.mock('components/Footer', () => 'Footer');
+
 describe('Page Index', () => {
   let Component;
 

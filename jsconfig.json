@@ -6,6 +6,7 @@
     "paths": {
       "components/*": ["components/*"],
       "pages/*": ["pages/*"],
+      "plugins/*": ["plugins/*"],
       "store/*": ["store/*"],
       "tests/*": ["tests/*"],
       "utils/*": ["utils/*"],
