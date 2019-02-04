@@ -9,6 +9,8 @@
 
 `npm run dev`
 
+The link of project http://localhost:3000/
+
 # Using for production
 
 `npm start`
