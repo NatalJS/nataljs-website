@@ -4,7 +4,9 @@ import Header from 'components/Header';
 import About from 'components/About';
 import HowTo from 'components/HowTo';
 import Events from 'components/Events';
+import EventsCurrent from 'components/EventsCurrent';
 import JoinToUs from 'components/JoinToUs';
+import CallForPapers from 'components/CallForPapers';
 import Footer from 'components/Footer';
 
 import 'styles/style.scss';
@@ -25,7 +27,9 @@ class Index extends React.Component {
           <About />
           <HowTo />
         </div>
-        <Events />
+        <EventsCurrent />
+        <CallForPapers />
+        {/* <Events /> */}
         <JoinToUs />
         <Footer />
       </Fragment>

@@ -1,0 +1,23 @@
+.call-for-papers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $pink;
+
+  position: relative;
+  text-align: center;
+
+  &:before {
+    @extend .decorative-wave--yellow;
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 140px;
+    width: 140px;
+
+    @include media-breakpoint-up(lg) {
+      right: -2%;
+      width: 280px;
+    }
+  }
+
+}
