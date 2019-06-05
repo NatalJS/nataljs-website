@@ -10,7 +10,7 @@
     "jest": "jest --config ./tests/jest.config.js",
     "test": "npm run jest -- --coverage",
     "start": "NODE_ENV=production && npm run build && npm run export && http-server ./out -o",
-    "production": "cd public && git ls-files -z | xargs -0 git rm -f && cd .. && webpack --progress --config webpack.production.config.js && cd public && git add . && git commit -m 'updating website' && git push origin master && cd .."
+    "deploy": "rm -r out && npm run build && npm run export && cd public && git ls-files -z| xargs -0 git rm -fr && rm -rf _next || true && cp -r ../out/* . && touch .nojekyll && git add -A && git commit -m 'updating website' && git push origin master && cd .."
   },
   "repository": {
     "type": "git",
