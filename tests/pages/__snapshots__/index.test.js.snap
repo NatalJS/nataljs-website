@@ -10,6 +10,43 @@ Array [
     <HowTo />
   </div>,
   <section
+    className="sign-up"
+    id="sign-up"
+  >
+    <h1
+      className="section-title"
+    >
+      Inscreva-se e participe do evento
+    </h1>
+    <a
+      className="btn btn--white"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdWT3MnHCGjhBp7dn5KYTfd61eysoO93TB8Alz12u2vmXiJ-Q/viewform"
+      target="_blank"
+    >
+      inscrever agora
+    </a>
+  </section>,
+  <section
+    className="call-for-papers"
+    id="call-for-papers"
+  >
+    <h1
+      className="section-title"
+    >
+      Call For Papers
+    </h1>
+    <p>
+      Tem uma palestra legal? Tem algo para falar?
+    </p>
+    <a
+      className="btn btn--black"
+      href="http://speakerfight.com/events/ii-evento-nataljs"
+      targe="_blank"
+    >
+      Submeta sua palestra
+    </a>
+  </section>,
+  <section
     className="events"
     id="incoming-events"
   >
@@ -50,26 +87,6 @@ Array [
         </div>
       </div>
     </div>
-  </section>,
-  <section
-    className="call-for-papers"
-    id="join-us"
-  >
-    <h1
-      className="section-title"
-    >
-      Call For Papers
-    </h1>
-    <p>
-      Tem uma palestra legal? Tem algo para falar?
-    </p>
-    <a
-      className="btn btn--black"
-      href="http://speakerfight.com/events/ii-evento-nataljs"
-      targe="_blank"
-    >
-      Submeta sua palestra
-    </a>
   </section>,
   <JoinToUs />,
   <Footer />,
