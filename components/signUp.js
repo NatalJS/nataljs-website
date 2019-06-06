@@ -8,7 +8,7 @@ const SignUp = () => (
       className="btn btn--white"
       target="_blank"
     >
-      formulário de inscrição
+      inscrever agora
     </a>
   </section>
 );
