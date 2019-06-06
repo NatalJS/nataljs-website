@@ -1,0 +1,9 @@
+.sign-up{
+  @extend .events;
+  background-color: $green;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
