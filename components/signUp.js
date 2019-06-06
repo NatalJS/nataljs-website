@@ -6,7 +6,7 @@ const SignUp = () => (
     <a
       href="https://docs.google.com/forms/d/e/1FAIpQLSdWT3MnHCGjhBp7dn5KYTfd61eysoO93TB8Alz12u2vmXiJ-Q/viewform"
       className="btn btn--white"
-      targe="_blank"
+      target="_blank"
     >
       formulário de inscrição
     </a>
