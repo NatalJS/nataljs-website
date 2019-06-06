@@ -35,6 +35,19 @@
       background-color: lighten($black, 30%);
     }
   }
+  &--white {
+    background-color: $white;
+    color: $black;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+    &:active {
+      background-color: darken($white, 30%);
+      color: $black;
+    }
+  }
 }
 
 @media(min-width: map-get($grid-breakpoints, sm)) {

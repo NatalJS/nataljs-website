@@ -15,6 +15,12 @@ const Header = () => (
           <a href="#how-to" className="menu__item__link scroll">Por onde começar?</a>
         </li>
         <li className="menu__item">
+          <a href="#sign-up" className="menu__item__link scroll">Inscreva-se</a>
+        </li>
+        <li className="menu__item">
+          <a href="#call-for-papers" className="menu__item__link scroll">Call for papers</a>
+        </li>
+        <li className="menu__item">
           <a href="#incoming-events" className="menu__item__link scroll">Próximos eventos</a>
         </li>
         <li className="menu__item">
