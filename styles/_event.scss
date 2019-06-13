@@ -24,9 +24,16 @@
 
     &--sticker3:before {
       background-color: $white;
-      width: 58px;
+      width: 30px;
       height: 6px;
       transform: translate(-17px, 17px);
+    }
+
+    &--sticker4:before {
+      background-color: $blue;
+      width: 20px;
+      height: 20px;
+      transform: translate(50px, 0px) rotate(60deg);
     }
   }
 

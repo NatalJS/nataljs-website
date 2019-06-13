@@ -1,16 +1,15 @@
 import React from 'react';
 
 const SignUp = () => (
-  <section id="sign-up" className="sign-up">
-    <h1 className="section-title">Inscreva-se e participe do evento</h1>
+  <React.Fragment>
     <a
       href="https://docs.google.com/forms/d/e/1FAIpQLSdWT3MnHCGjhBp7dn5KYTfd61eysoO93TB8Alz12u2vmXiJ-Q/viewform"
-      className="btn btn--white"
+      className="btn btn--white w-100 text-center"
       target="_blank"
     >
-      inscrever agora
+      inscreva-se agora
     </a>
-  </section>
+  </React.Fragment>
 );
 
 export default SignUp;
