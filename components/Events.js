@@ -43,7 +43,6 @@ const Events = () => (
           <div className="media event__media event__media--sticker3">
             <img className="event__image" src="/static/images/speakers/avatar-gilmar.png" alt="Gilmar" />
             <div className="media-body">
-              <div className="events__location"></div>
               <div className="events__location">9H40</div>
               <h4 className="event__talk">React Native autenticação com AWS Amplify</h4>
               <p className="event__speaker">Gilmar Silva</p>
