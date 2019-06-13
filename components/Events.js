@@ -27,6 +27,7 @@ const Events = () => (
           <div className="media event__media event__media--sticker1">
             <img className="event__image" src="/static/images/speakers/avatar-stefan.png" alt="Stefan" />
             <div className="media-body">
+              <div className="events__location">9H</div>
               <h4 className="event__talk">Javascript everywhere</h4>
               <p className="event__speaker">Stefan Yohansson</p>
             </div>
@@ -34,6 +35,7 @@ const Events = () => (
           <div className="media event__media event__media--sticker2">
             <img className="event__image" src="/static/images/speakers/avatar-wallysson.png" alt="Wallysson" />
             <div className="media-body">
+              <div className="events__location">9H20</div>
               <h4 className="event__talk">JavaScript para programadores Python</h4>
               <p className="event__speaker">Wallysson Lima</p>
             </div>
@@ -41,6 +43,8 @@ const Events = () => (
           <div className="media event__media event__media--sticker3">
             <img className="event__image" src="/static/images/speakers/avatar-gilmar.png" alt="Gilmar" />
             <div className="media-body">
+              <div className="events__location"></div>
+              <div className="events__location">9H40</div>
               <h4 className="event__talk">React Native autenticação com AWS Amplify</h4>
               <p className="event__speaker">Gilmar Silva</p>
             </div>
@@ -48,6 +52,7 @@ const Events = () => (
           <div className="media event__media event__media--sticker4">
             <img className="event__image" src="/static/images/speakers/avatar-daniel.png" alt="Daniel" />
             <div className="media-body">
+              <div className="events__location">10H</div>
               <h4 className="event__talk">Desenvolvimento 3D na web</h4>
               <p className="event__speaker">Daniel Fernandes</p>
             </div>
