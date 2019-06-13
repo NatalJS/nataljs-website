@@ -67,7 +67,7 @@ const Events = () => (
             <div className="media-body">
               <div className="events__location">SALA A101</div>
               <h4 className="event__talk">Contribuição para grandes projetos opensource</h4>
-              <p className="event__speaker">Stefan Yo Michel </p>
+              <p className="event__speaker">Stefan Yohansson </p>
             </div>
           </div>
           <div className="media event__media event__media--sticker2">
