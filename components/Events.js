@@ -53,6 +53,10 @@ const Events = () => (
             </div>
           </div>
         </div>
+        <div className="events__day">
+          COFFEE BREAK
+          {' '}<span>10H25</span>
+        </div>
 
         <div className="events__day">
           WORKSHOPS
@@ -65,7 +69,7 @@ const Events = () => (
           <div className="media event__media event__media--sticker1">
             <img className="event__image" src="/static/images/speakers/avatar-stefan.png" alt="Stefan" />
             <div className="media-body">
-              <div className="events__location">SALA A101</div>
+              <div className="events__location">SALA A303</div>
               <h4 className="event__talk">Contribuição para grandes projetos opensource</h4>
               <p className="event__speaker">Stefan Yohansson </p>
             </div>
@@ -73,7 +77,7 @@ const Events = () => (
           <div className="media event__media event__media--sticker2">
             <img className="event__image" src="/static/images/speakers/avatar-gustavo.png" alt="Gustavo" />
             <div className="media-body">
-              <div className="events__location">SALA A303</div>
+              <div className="events__location">SALA A104</div>
               <h4 className="event__talk">Criando sua primeira aplicação em React.js</h4>
               <p className="event__speaker">Gustavo Freire </p>
             </div>
