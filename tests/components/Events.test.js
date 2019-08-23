@@ -1,4 +1,3 @@
-
 import renderer from 'react-test-renderer';
 import Events from 'components/Events';
 import data from '../../content/data.json';

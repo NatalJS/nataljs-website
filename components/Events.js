@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
-import { DateTime } from 'luxon';
+import { Settings, DateTime } from 'luxon';
 import last from 'lodash/last';
 import SignUp from 'components/signUp';
+
+Settings.defaultZoneName = 'America/Recife';
 
 const showDateTime = (dateTimeISO) => {
   const dateTime = DateTime.fromISO(dateTimeISO);
