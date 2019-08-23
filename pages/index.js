@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
+import last from 'lodash.last';
+import get from 'lodash.get';
 import Header from 'components/Header';
 import About from 'components/About';
 import HowTo from 'components/HowTo';
@@ -24,6 +26,7 @@ class Index extends React.Component {
 
   render() {
     const { events } = this.props;
+    const lastEvent = last(events);
 
     return (
       <Fragment>
@@ -35,6 +38,9 @@ class Index extends React.Component {
           <About />
           <HowTo />
         </div>
+        {get(lastEvent, 'call4papers.open', false) && (
+          <CallForPapers {...lastEvent.call4papers} />
+        )}
         <Events events={events} />
         <JoinToUs />
         <Footer />
