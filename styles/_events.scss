@@ -80,6 +80,23 @@
     }
   }
 
+  &__date-time {
+    font-size: 2.000em;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.250em;
+    }
+
+    &:before {
+      content: '';
+      background-image: url(/static/images/clock.svg);
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
   &__day {
     @extend .my-4;
     @extend .offset-sm-3;

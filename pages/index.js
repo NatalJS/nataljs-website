@@ -7,15 +7,24 @@ import Events from 'components/Events';
 import JoinToUs from 'components/JoinToUs';
 import CallForPapers from 'components/CallForPapers';
 import Footer from 'components/Footer';
+import data from '../content/data.json';
 
 import 'styles/style.scss';
 
 class Index extends React.Component {
+  static getInitialProps() {
+    const { events } = data;
+
+    return { events };
+  }
+
   componentDidMount() {
     import('plugins/scholl-navigation');
   }
 
   render() {
+    const { events } = this.props;
+
     return (
       <Fragment>
         <Head>
@@ -26,7 +35,7 @@ class Index extends React.Component {
           <About />
           <HowTo />
         </div>
-        <Events />
+        <Events events={events} />
         <JoinToUs />
         <Footer />
       </Fragment>

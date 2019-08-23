@@ -1,112 +1,104 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Settings, DateTime } from 'luxon';
+import last from 'lodash/last';
 import SignUp from 'components/signUp';
 
-const Events = () => (
-  <section id="incoming-events" className="events">
-    <h1 className="section-title">Próximos Eventos</h1>
-    <div className="events__container">
-      <div className="events__block">
-        <div className="col-3 events__time">
-          <span>15.06</span>
-          <span>8H30 ÀS 12H</span>
-        </div>
-        <div className="col-9 events__body">
-          <div className="events__title">Natal JS 2: Javascripters, rejoice!</div>
-          <div className="events__location">IMD UFRN</div>
-        </div>
-      </div>
-      <div className="events__block">
-        <SignUp />
-      </div>
-      <div className="events__block">
-        <div className="events__day">
-          PALESTRAS: SALA B206
-          {' '}<span>INICIO 8H30</span>
-        </div>
-        <div className="events__speakers">
-          <div className="media event__media event__media--sticker1">
-            <img className="event__image" src="/static/images/speakers/avatar-stefan.png" alt="Stefan" />
-            <div className="media-body">
-              <div className="events__location">9H</div>
-              <h4 className="event__talk">Javascript everywhere</h4>
-              <p className="event__speaker">Stefan Yohansson</p>
-            </div>
-          </div>
-          <div className="media event__media event__media--sticker2">
-            <img className="event__image" src="/static/images/speakers/avatar-wallysson.png" alt="Wallysson" />
-            <div className="media-body">
-              <div className="events__location">9H20</div>
-              <h4 className="event__talk">JavaScript para programadores Python</h4>
-              <p className="event__speaker">Wallysson Lima</p>
-            </div>
-          </div>
-          <div className="media event__media event__media--sticker3">
-            <img className="event__image" src="/static/images/speakers/avatar-gilmar.png" alt="Gilmar" />
-            <div className="media-body">
-              <div className="events__location">9H40</div>
-              <h4 className="event__talk">React Native autenticação com AWS Amplify</h4>
-              <p className="event__speaker">Gilmar Silva</p>
-            </div>
-          </div>
-          <div className="media event__media event__media--sticker4">
-            <img className="event__image" src="/static/images/speakers/avatar-daniel.png" alt="Daniel" />
-            <div className="media-body">
-              <div className="events__location">10H</div>
-              <h4 className="event__talk">Desenvolvimento 3D na web</h4>
-              <p className="event__speaker">Daniel Fernandes</p>
-            </div>
-          </div>
-        </div>
-        <div className="events__day">
-          COFFEE BREAK
-          {' '}<span>10H25</span>
-        </div>
+Settings.defaultZoneName = 'America/Recife';
 
-        <div className="events__day">
-          WORKSHOPS
-          {' '}<span>INÍCIO 10H50</span>
-        </div>
+const showDateTime = (dateTimeISO) => {
+  const dateTime = DateTime.fromISO(dateTimeISO);
 
-        <p className="offset-sm-3">Os workshops ocorrerão simultaneamente.</p>
+  return dateTime.minute === 0 ? (
+    `${dateTime.toFormat('HH')}H`
+  ) : (
+    `${dateTime.toFormat('HH:mm')}H`
+  );
+};
 
-        <div className="events__speakers">
-          <div className="media event__media event__media--sticker1">
-            <img className="event__image" src="/static/images/speakers/avatar-stefan.png" alt="Stefan" />
-            <div className="media-body">
-              <div className="events__location">SALA A303</div>
-              <h4 className="event__talk">Contribuição para grandes projetos opensource</h4>
-              <p className="event__speaker">Stefan Yohansson </p>
-            </div>
-          </div>
-          <div className="media event__media event__media--sticker2">
-            <img className="event__image" src="/static/images/speakers/avatar-gustavo.png" alt="Gustavo" />
-            <div className="media-body">
-              <div className="events__location">SALA A104</div>
-              <h4 className="event__talk">Criando sua primeira aplicação em React.js</h4>
-              <p className="event__speaker">Gustavo Freire </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div
-        className="w-100 d-flex flex-column align-items-center justify-content-center"
-        style={{
-          backgroundColor: 'white',
-          padding: 20,
-        }}
-      >
-        <span
-          style={{
-            alignSelf: 'flex-start'
-          }}
-        >
-          Patrocinado por
-        </span>
-        <a target="_blank" href="https://www.evolux.net.br/vagas"><img width={150} alt="evolux logo"src="/static/images/evolux.svg"/></a>
-      </div>
-    </div>
-  </section>
+const showMonthAndDay = startAtISO => (
+  DateTime.fromISO(startAtISO).toFormat('LL.dd')
 );
+
+
+const showDuration = (startAt, endAt) => (
+  `${showDateTime(startAt)} ÀS ${showDateTime(endAt)}`
+);
+
+const eventMediaClass = index => `media event__media event__media--sticker${(index % 4) + 1}`;
+
+const Events = ({ events }) => {
+  const event = last(events);
+
+  return (
+    <section id="incoming-events" className="events">
+      <h1 className="section-title">Próximos Eventos</h1>
+      <div className="events__container">
+        <div className="events__block">
+          <div className="col-3 events__time">
+            <span>{showMonthAndDay(event.startAt)}</span>
+            <span>{showDuration(event.startAt, event.endAt)}</span>
+          </div>
+          <div className="col-9 events__body">
+            <div className="events__title">{event.title}</div>
+            <div className="events__location">{event.address}</div>
+          </div>
+        </div>
+        {event.subscriptionLink && (
+          <div className="events__block">
+            <SignUp subscriptionLink={event.subscriptionLink} />
+          </div>
+        )}
+        <div className="events__block">
+          {event.sections.map((section => (
+            <Fragment key={section.id}>
+              <div className="events__day">
+                {section.title}{' '}<span>{section.subtitle}</span>
+              </div>
+              {section.description && (
+                <p className="offset-sm-3">{section.description}</p>
+              )}
+              {section.talks && (
+                <div className="events__speakers">
+                  {section.talks.map((talk, index) => (
+                    <div key={talk.id} className={eventMediaClass(index)}>
+                      <img className="event__image" src={talk.image} alt={talk.speaker} />
+                      <div className="media-body">
+                        <div className="events__date-time">{showDateTime(talk.startAt)}</div>
+                        <h4 className="event__talk">{talk.title}</h4>
+                        <p className="event__speaker">{talk.speaker}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </Fragment>
+          )))}
+        </div>
+        {event.sponsors && event.sponsors.map(sponsor => (
+          <div
+            key={sponsor.id}
+
+            className="w-100 d-flex flex-column align-items-center justify-content-center"
+            style={{
+              backgroundColor: 'white',
+              padding: 20,
+            }}
+          >
+            <span
+              style={{
+                alignSelf: 'flex-start',
+              }}
+            >
+            Patrocinado por
+            </span>
+            <a href={sponsor.link} target="_blank" title={sponsor.name} rel="noopener noreferrer">
+              <img width={150} alt={sponsor.name} src={sponsor.image} />
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Events;
