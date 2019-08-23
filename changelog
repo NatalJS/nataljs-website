@@ -6,5 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2018-08-23
+### Added
+- Add the changelog file (#12)
+
+### Changed
+- Update the next event informations and add call4papers (#14)
+- Using events dynamically (#13)
+- Update package to use their last versions (#10)
+
+### Fixed
+- Fix old tests (#11)
+
+
 [Unreleased]: https://github.com/NatalJS/nataljs-website/compare/v1.1.0...HEAD
 [1.0.0]: https://github.com/NatalJS/nataljs-website/compare/v0.0.1...v1.1.0
