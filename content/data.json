@@ -150,6 +150,20 @@
           ]
         }
       ]
+    },
+    {
+
+      "id": 3,
+      "title": "Natal JS 3: A terceira vez é ainda melhor",
+      "address": "IMD UFRN",
+      "startAt": "2019-08-31T08:30:00-03:00",
+      "subscriptionLink": null,
+      "endAt": "2019-08-31T12:00:00-03:00",
+      "call4papers": {
+        "open": true,
+        "link": "https://speakerfight.com/events/iii-meetup-da-nataljs/"
+      },
+      "sections": []
     }
   ]
 }
