@@ -32,6 +32,8 @@
     "bootstrap": "^4.3.1",
     "http-server": "^0.11.1",
     "jest": "^24.9.0",
+    "lodash.last": "^3.0.0",
+    "luxon": "^1.17.2",
     "next": "^9.0.4",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

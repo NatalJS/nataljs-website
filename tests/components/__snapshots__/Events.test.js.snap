@@ -20,10 +20,10 @@ exports[`Component Events should render component correctly 1`] = `
         className="col-3 events__time"
       >
         <span>
-          15.06
+          05.15
         </span>
         <span>
-          8H30 ÀS 12H
+          08:30H ÀS 12H
         </span>
       </div>
       <div
@@ -47,9 +47,11 @@ exports[`Component Events should render component correctly 1`] = `
       <a
         className="btn btn--white w-100 text-center"
         href="https://docs.google.com/forms/d/e/1FAIpQLSdWT3MnHCGjhBp7dn5KYTfd61eysoO93TB8Alz12u2vmXiJ-Q/viewform"
+        rel="noopener noreferrer"
         target="_blank"
+        title="Inscreva-se agora"
       >
-        inscreva-se agora
+        Inscreva-se agora
       </a>
     </div>
     <div
@@ -71,7 +73,7 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker1"
         >
           <img
-            alt="Stefan"
+            alt="Stefan Yohansson"
             className="event__image"
             src="/static/images/speakers/avatar-stefan.png"
           />
@@ -79,9 +81,9 @@ exports[`Component Events should render component correctly 1`] = `
             className="media-body"
           >
             <div
-              className="events__location"
+              className="events__date-time"
             >
-              9H
+              09H
             </div>
             <h4
               className="event__talk"
@@ -99,7 +101,7 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker2"
         >
           <img
-            alt="Wallysson"
+            alt="Wallysson Lima"
             className="event__image"
             src="/static/images/speakers/avatar-wallysson.png"
           />
@@ -107,9 +109,9 @@ exports[`Component Events should render component correctly 1`] = `
             className="media-body"
           >
             <div
-              className="events__location"
+              className="events__date-time"
             >
-              9H20
+              09:20H
             </div>
             <h4
               className="event__talk"
@@ -127,7 +129,7 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker3"
         >
           <img
-            alt="Gilmar"
+            alt="Gilmar Silva"
             className="event__image"
             src="/static/images/speakers/avatar-gilmar.png"
           />
@@ -135,9 +137,9 @@ exports[`Component Events should render component correctly 1`] = `
             className="media-body"
           >
             <div
-              className="events__location"
+              className="events__date-time"
             >
-              9H40
+              09:40H
             </div>
             <h4
               className="event__talk"
@@ -155,7 +157,7 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker4"
         >
           <img
-            alt="Daniel"
+            alt="Daniel Fernandes"
             className="event__image"
             src="/static/images/speakers/avatar-daniel.png"
           />
@@ -163,7 +165,7 @@ exports[`Component Events should render component correctly 1`] = `
             className="media-body"
           >
             <div
-              className="events__location"
+              className="events__date-time"
             >
               10H
             </div>
@@ -210,7 +212,7 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker1"
         >
           <img
-            alt="Stefan"
+            alt="Stefan Yohansson"
             className="event__image"
             src="/static/images/speakers/avatar-stefan.png"
           />
@@ -218,9 +220,9 @@ exports[`Component Events should render component correctly 1`] = `
             className="media-body"
           >
             <div
-              className="events__location"
+              className="events__date-time"
             >
-              SALA A303
+              10:50H
             </div>
             <h4
               className="event__talk"
@@ -230,7 +232,7 @@ exports[`Component Events should render component correctly 1`] = `
             <p
               className="event__speaker"
             >
-              Stefan Yohansson 
+              Stefan Yohansson
             </p>
           </div>
         </div>
@@ -238,7 +240,7 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker2"
         >
           <img
-            alt="Gustavo"
+            alt="Gustavo Freire"
             className="event__image"
             src="/static/images/speakers/avatar-gustavo.png"
           />
@@ -246,9 +248,9 @@ exports[`Component Events should render component correctly 1`] = `
             className="media-body"
           >
             <div
-              className="events__location"
+              className="events__date-time"
             >
-              SALA A104
+              10:50H
             </div>
             <h4
               className="event__talk"
@@ -258,7 +260,7 @@ exports[`Component Events should render component correctly 1`] = `
             <p
               className="event__speaker"
             >
-              Gustavo Freire 
+              Gustavo Freire
             </p>
           </div>
         </div>
@@ -284,10 +286,12 @@ exports[`Component Events should render component correctly 1`] = `
       </span>
       <a
         href="https://www.evolux.net.br/vagas"
+        rel="noopener noreferrer"
         target="_blank"
+        title="Evolux Sistemas"
       >
         <img
-          alt="evolux logo"
+          alt="Evolux Sistemas"
           src="/static/images/evolux.svg"
           width={150}
         />
