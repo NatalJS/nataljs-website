@@ -49,26 +49,6 @@ exports[`Component Header should render component correctly 1`] = `
       >
         <a
           className="menu__item__link scroll"
-          href="#sign-up"
-        >
-          Inscreva-se
-        </a>
-      </li>
-      <li
-        className="menu__item"
-      >
-        <a
-          className="menu__item__link scroll"
-          href="#call-for-papers"
-        >
-          Call for papers
-        </a>
-      </li>
-      <li
-        className="menu__item"
-      >
-        <a
-          className="menu__item__link scroll"
           href="#incoming-events"
         >
           Próximos eventos
