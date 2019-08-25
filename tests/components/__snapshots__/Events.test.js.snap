@@ -43,7 +43,267 @@ exports[`Component Events should render component correctly 1`] = `
     </div>
     <div
       className="events__block"
-    />
+    >
+      <div
+        className="events__day"
+      >
+        PALESTRAS: 1 PARTE
+         
+        <span>
+          8H30
+        </span>
+      </div>
+      <div
+        className="events__speakers"
+      >
+        <div
+          className="media event__media event__media--sticker1"
+        >
+          <img
+            alt="Marcell G. C. da Silva"
+            className="event__image"
+            src="/static/images/speakers/avatar-marcell.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              09H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              Além de validar formulários: usando React pra criar um telefone web
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Marcell G. C. da Silva
+            </p>
+          </div>
+        </div>
+        <div
+          className="media event__media event__media--sticker2"
+        >
+          <img
+            alt="Thayrone Santos"
+            className="event__image"
+            src="/static/images/speakers/avatar-thayrone.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              09:20H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              Como NÃO aprender react.js
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Thayrone Santos
+            </p>
+          </div>
+        </div>
+        <div
+          className="media event__media event__media--sticker3"
+        >
+          <img
+            alt="Adalberto Camacho Jr."
+            className="event__image"
+            src="/static/images/speakers/avatar-adalberto.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              09:40H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              Como diminuir a chance do seu código dar M#$%
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Adalberto Camacho Jr.
+            </p>
+          </div>
+        </div>
+        <div
+          className="media event__media event__media--sticker4"
+        >
+          <img
+            alt="Rodrigo Muniz"
+            className="event__image"
+            src="/static/images/speakers/avatar-rodrigo.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              10H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              Sou um QA, só sei Python e quero aprender JS
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Rodrigo Muniz
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="events__day"
+      >
+        COFFEE BREAK
+         
+        <span>
+          10H20
+        </span>
+      </div>
+      <div
+        className="events__day"
+      >
+        PALESTRAS: 2 PARTE
+         
+        <span>
+          10H40
+        </span>
+      </div>
+      <div
+        className="events__speakers"
+      >
+        <div
+          className="media event__media event__media--sticker1"
+        >
+          <img
+            alt="Zenobio"
+            className="event__image"
+            src="/static/images/speakers/avatar-zenobio.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              10:40H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              Debugger is on the table: Utilizando Debugger + Dev Tools para investigações mais avançadas
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Zenobio
+            </p>
+          </div>
+        </div>
+        <div
+          className="media event__media event__media--sticker2"
+        >
+          <img
+            alt="Neto Guimarães"
+            className="event__image"
+            src="/static/images/speakers/avatar-neto.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              11H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              O processo de não reinventar a roda usando lodash.js
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Neto Guimarães
+            </p>
+          </div>
+        </div>
+        <div
+          className="media event__media event__media--sticker3"
+        >
+          <img
+            alt="Igor Santos"
+            className="event__image"
+            src="/static/images/speakers/avatar-igor.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              11:20H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              Introdução a Static Site Generators e porque GatsbyJS pode ser sua escolha
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Igor Santos
+            </p>
+          </div>
+        </div>
+        <div
+          className="media event__media event__media--sticker4"
+        >
+          <img
+            alt="Gustavo Freire Santos"
+            className="event__image"
+            src="/static/images/speakers/avatar-gustavo.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              11:40H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              Javacript para IOT
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Gustavo Freire Santos
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 `;
