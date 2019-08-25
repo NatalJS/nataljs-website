@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
 import last from 'lodash.last';
+import has from 'lodash.has';
 import Header from 'components/Header';
 import About from 'components/About';
 import HowTo from 'components/HowTo';
@@ -26,7 +27,7 @@ class Index extends React.Component {
 
   render() {
     const { events } = this.props;
-    const { call4papers } = last(events);
+    const lastEvent = last(events);
 
     return (
       <Fragment>
@@ -38,7 +39,9 @@ class Index extends React.Component {
           <About />
           <HowTo />
         </div>
-        {isFuture(call4papers.endAt) && <CallForPapers {...call4papers} />}
+        {has(lastEvent, 'call4papers.endAt') && isFuture(lastEvent.call4papers.endAt) && (
+          <CallForPapers {...lastEvent.call4papers} />
+        )}
         <Events events={events} />
         <JoinToUs />
         <Footer />
