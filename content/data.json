@@ -162,7 +162,83 @@
         "endAt": "2019-08-23T18:00:00-03:00",
         "link": "https://speakerfight.com/events/iii-meetup-da-nataljs/"
       },
-      "sections": []
+      "sections": [
+        {
+          "id": 6,
+          "title": "PALESTRAS: 1 PARTE",
+          "subtitle": "8H30",
+          "talks": [
+            {
+              "id": 12,
+              "title": "Além de validar formulários: usando React pra criar um telefone web",
+              "speaker": "Marcell G. C. da Silva",
+              "image": "/static/images/speakers/avatar-marcell.png",
+              "startAt": "2019-08-31T09:00:00-03:00"
+            },
+            {
+              "id": 13,
+              "title": "Como NÃO aprender react.js",
+              "speaker": "Thayrone Santos",
+              "image": "/static/images/speakers/avatar-thayrone.png",
+              "startAt": "2019-08-31T09:20:00-03:00"
+            },
+            {
+              "id": 14,
+              "title": "Como diminuir a chance do seu código dar M#$%",
+              "speaker": "Adalberto Camacho Jr.",
+              "image": "/static/images/speakers/avatar-adalberto.png",
+              "startAt": "2019-08-31T09:40:00-03:00"
+            },
+            {
+              "id": 15,
+              "title": "Sou um QA, só sei Python e quero aprender JS",
+              "speaker": "Rodrigo Muniz",
+              "image": "/static/images/speakers/avatar-rodrigo.png",
+              "startAt": "2019-08-31T10:00:00-03:00"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "COFFEE BREAK",
+          "subtitle": "10H20"
+        },
+        {
+          "id": 8,
+          "title": "PALESTRAS: 2 PARTE",
+          "subtitle": "10H40",
+          "talks": [
+            {
+              "id": 16,
+              "title": "Debugger is on the table: Utilizando Debugger + Dev Tools para investigações mais avançadas",
+              "speaker": "Zenobio",
+              "image": "/static/images/speakers/avatar-zenobio.png",
+              "startAt": "2019-08-31T10:40:00-03:00"
+            },
+            {
+              "id": 17,
+              "title": "O processo de não reinventar a roda usando lodash.js",
+              "speaker": "Neto Guimarães",
+              "image": "/static/images/speakers/avatar-neto.png",
+              "startAt": "2019-08-31T11:00:00-03:00"
+            },
+            {
+              "id": 18,
+              "title": "Introdução a Static Site Generators e porque GatsbyJS pode ser sua escolha",
+              "speaker": "Igor Santos",
+              "image": "/static/images/speakers/avatar-igor.png",
+              "startAt": "2019-08-31T11:20:00-03:00"
+            },
+            {
+              "id": 19,
+              "title": "Javacript para IOT",
+              "speaker": "Gustavo Freire Santos",
+              "image": "/static/images/speakers/avatar-gustavo.png",
+              "startAt": "2019-08-31T11:40:00-03:00"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
