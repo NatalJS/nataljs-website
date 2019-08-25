@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
 import last from 'lodash.last';
-import get from 'lodash.get';
 import Header from 'components/Header';
 import About from 'components/About';
 import HowTo from 'components/HowTo';
@@ -10,6 +9,7 @@ import JoinToUs from 'components/JoinToUs';
 import CallForPapers from 'components/CallForPapers';
 import Footer from 'components/Footer';
 import data from '../content/data.json';
+import { isFuture } from '../utils/date';
 
 import 'styles/style.scss';
 
@@ -26,7 +26,7 @@ class Index extends React.Component {
 
   render() {
     const { events } = this.props;
-    const lastEvent = last(events);
+    const { call4papers } = last(events);
 
     return (
       <Fragment>
@@ -38,9 +38,7 @@ class Index extends React.Component {
           <About />
           <HowTo />
         </div>
-        {get(lastEvent, 'call4papers.open', false) && (
-          <CallForPapers {...lastEvent.call4papers} />
-        )}
+        {isFuture(call4papers.endAt) && <CallForPapers {...call4papers} />}
         <Events events={events} />
         <JoinToUs />
         <Footer />
