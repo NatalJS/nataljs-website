@@ -20,10 +20,10 @@ exports[`Component Events should render component correctly 1`] = `
         className="col-3 events__time"
       >
         <span>
-          08.31
+          09.14
         </span>
         <span>
-          08:30H ÀS 12H
+          09H ÀS 12H
         </span>
       </div>
       <div
@@ -37,7 +37,7 @@ exports[`Component Events should render component correctly 1`] = `
         <div
           className="events__location"
         >
-          IMD UFRN
+          Sebrae
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@ exports[`Component Events should render component correctly 1`] = `
         PALESTRAS: 1 PARTE
          
         <span>
-          8H30
+          9H
         </span>
       </div>
       <div
@@ -250,9 +250,9 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker3"
         >
           <img
-            alt="Igor Santos"
+            alt="Daniel Lopes"
             className="event__image"
-            src="/static/images/speakers/avatar-igor.png"
+            src="/static/images/speakers/avatar-daniel-lopes.png"
           />
           <div
             className="media-body"
@@ -265,12 +265,12 @@ exports[`Component Events should render component correctly 1`] = `
             <h4
               className="event__talk"
             >
-              Introdução a Static Site Generators e porque GatsbyJS pode ser sua escolha
+              Como 'magicamente' criar um PWA com Vue em 20 minutos
             </h4>
             <p
               className="event__speaker"
             >
-              Igor Santos
+              Daniel Lopes
             </p>
           </div>
         </div>
