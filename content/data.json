@@ -169,13 +169,6 @@
           "subtitle": "9H",
           "talks": [
             {
-              "id": 12,
-              "title": "Além de validar formulários: usando React pra criar um telefone web",
-              "speaker": "Marcell G. C. da Silva",
-              "image": "/static/images/speakers/avatar-marcell.png",
-              "startAt": "2019-09-14T09:00:00-03:00"
-            },
-            {
               "id": 13,
               "title": "Como NÃO aprender react.js",
               "speaker": "Thayrone Santos",
@@ -195,6 +188,13 @@
               "speaker": "Rodrigo Muniz",
               "image": "/static/images/speakers/avatar-rodrigo.png",
               "startAt": "2019-09-14T10:00:00-03:00"
+            },
+            {
+              "id": 16,
+              "title": "Debugger is on the table: Utilizando Debugger + Dev Tools para investigações mais avançadas",
+              "speaker": "Zenobio",
+              "image": "/static/images/speakers/avatar-zenobio.png",
+              "startAt": "2019-09-14T10:40:00-03:00"
             }
           ]
         },
@@ -209,11 +209,11 @@
           "subtitle": "10H40",
           "talks": [
             {
-              "id": 16,
-              "title": "Debugger is on the table: Utilizando Debugger + Dev Tools para investigações mais avançadas",
-              "speaker": "Zenobio",
-              "image": "/static/images/speakers/avatar-zenobio.png",
-              "startAt": "2019-09-14T10:40:00-03:00"
+              "id": 12,
+              "title": "Além de validar formulários: usando React pra criar um telefone web",
+              "speaker": "Marcell G. C. da Silva",
+              "image": "/static/images/speakers/avatar-marcell.png",
+              "startAt": "2019-09-14T09:00:00-03:00"
             },
             {
               "id": 17,
