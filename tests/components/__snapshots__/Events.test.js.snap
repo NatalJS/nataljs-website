@@ -60,34 +60,6 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker1"
         >
           <img
-            alt="Marcell G. C. da Silva"
-            className="event__image"
-            src="/static/images/speakers/avatar-marcell.png"
-          />
-          <div
-            className="media-body"
-          >
-            <div
-              className="events__date-time"
-            >
-              09H
-            </div>
-            <h4
-              className="event__talk"
-            >
-              Além de validar formulários: usando React pra criar um telefone web
-            </h4>
-            <p
-              className="event__speaker"
-            >
-              Marcell G. C. da Silva
-            </p>
-          </div>
-        </div>
-        <div
-          className="media event__media event__media--sticker2"
-        >
-          <img
             alt="Thayrone Santos"
             className="event__image"
             src="/static/images/speakers/avatar-thayrone.png"
@@ -113,7 +85,7 @@ exports[`Component Events should render component correctly 1`] = `
           </div>
         </div>
         <div
-          className="media event__media event__media--sticker3"
+          className="media event__media event__media--sticker2"
         >
           <img
             alt="Adalberto Camacho Jr."
@@ -141,7 +113,7 @@ exports[`Component Events should render component correctly 1`] = `
           </div>
         </div>
         <div
-          className="media event__media event__media--sticker4"
+          className="media event__media event__media--sticker3"
         >
           <img
             alt="Rodrigo Muniz"
@@ -165,6 +137,34 @@ exports[`Component Events should render component correctly 1`] = `
               className="event__speaker"
             >
               Rodrigo Muniz
+            </p>
+          </div>
+        </div>
+        <div
+          className="media event__media event__media--sticker4"
+        >
+          <img
+            alt="Zenobio"
+            className="event__image"
+            src="/static/images/speakers/avatar-zenobio.png"
+          />
+          <div
+            className="media-body"
+          >
+            <div
+              className="events__date-time"
+            >
+              10:40H
+            </div>
+            <h4
+              className="event__talk"
+            >
+              Debugger is on the table: Utilizando Debugger + Dev Tools para investigações mais avançadas
+            </h4>
+            <p
+              className="event__speaker"
+            >
+              Zenobio
             </p>
           </div>
         </div>
@@ -194,9 +194,9 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker1"
         >
           <img
-            alt="Zenobio"
+            alt="Marcell G. C. da Silva"
             className="event__image"
-            src="/static/images/speakers/avatar-zenobio.png"
+            src="/static/images/speakers/avatar-marcell.png"
           />
           <div
             className="media-body"
@@ -204,17 +204,17 @@ exports[`Component Events should render component correctly 1`] = `
             <div
               className="events__date-time"
             >
-              10:40H
+              09H
             </div>
             <h4
               className="event__talk"
             >
-              Debugger is on the table: Utilizando Debugger + Dev Tools para investigações mais avançadas
+              Além de validar formulários: usando React pra criar um telefone web
             </h4>
             <p
               className="event__speaker"
             >
-              Zenobio
+              Marcell G. C. da Silva
             </p>
           </div>
         </div>
