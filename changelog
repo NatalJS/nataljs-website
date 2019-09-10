@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.1] = 2019-09-10
+### Added
+- Fix Talks order (#17)
+
 ## [1.4.0] = 2019-08-25
 ### Added
 - Add new talks (#16)
@@ -19,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add the changelog file (#12)
 
 ### Changed
-- Update the next event informations and add call4papers (#14)
+- Update the next event information and add call4papers (#14)
 - Using events dynamically (#13)
 - Update package to use their last versions (#10)
 
