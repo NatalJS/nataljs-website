@@ -70,7 +70,7 @@ exports[`Component Events should render component correctly 1`] = `
             <div
               className="events__date-time"
             >
-              09:20H
+              09H
             </div>
             <h4
               className="event__talk"
@@ -98,7 +98,7 @@ exports[`Component Events should render component correctly 1`] = `
             <div
               className="events__date-time"
             >
-              09:40H
+              09:20H
             </div>
             <h4
               className="event__talk"
@@ -126,7 +126,7 @@ exports[`Component Events should render component correctly 1`] = `
             <div
               className="events__date-time"
             >
-              10H
+              09:40H
             </div>
             <h4
               className="event__talk"
@@ -144,7 +144,7 @@ exports[`Component Events should render component correctly 1`] = `
           className="media event__media event__media--sticker4"
         >
           <img
-            alt="Zenobio"
+            alt="Zenobio Pereira"
             className="event__image"
             src="/static/images/speakers/avatar-zenobio.png"
           />
@@ -154,7 +154,7 @@ exports[`Component Events should render component correctly 1`] = `
             <div
               className="events__date-time"
             >
-              10:40H
+              10H
             </div>
             <h4
               className="event__talk"
@@ -164,7 +164,7 @@ exports[`Component Events should render component correctly 1`] = `
             <p
               className="event__speaker"
             >
-              Zenobio
+              Zenobio Pereira
             </p>
           </div>
         </div>
@@ -204,7 +204,7 @@ exports[`Component Events should render component correctly 1`] = `
             <div
               className="events__date-time"
             >
-              09H
+              10:40H
             </div>
             <h4
               className="event__talk"
