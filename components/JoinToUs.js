@@ -6,7 +6,7 @@ const JoinToUs = () => (
     <ul className="join-us__list">
       <li className="join-us__item">Vá aos encontros!</li>
       <li className="join-us__item">Use a hasttag #nataljs</li>
-      <li className="join-us__item">Divulgue nas redes socias</li>
+      <li className="join-us__item">Divulgue nas redes sociais</li>
       <li className="join-us__item">
         Contribua em
         {' '}
