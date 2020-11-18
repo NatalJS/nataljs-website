@@ -13,6 +13,11 @@ const Footer = () => (
           <img src="/static/images/github-logo.svg" className="footer__ico" alt="github" />
         </a>
       </li>
+      <li>
+        <a href="https://t.me/natal_js" className="footer__social" title="telegram">
+          <img src="/static/images/telegram-logo.svg" className="footer__ico" alt="telegram" />
+        </a>
+      </li>
     </ul>
     <p className="footer__copy">
       © NatalJS.
